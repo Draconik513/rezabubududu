@@ -91,7 +91,7 @@ aku akan jadi orang yang paling keras teriak "congrats 🥳🎊 and proud of you
                   ❤️
                 </div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-bold drop-shadow-lg">
-                  Hendry 💖
+                  Laura 💖
                 </div>
                 <div className="text-white text-lg text-center mt-4">
                   Hanya kamu di hatiku, sayang 🥹
