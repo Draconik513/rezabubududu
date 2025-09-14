@@ -6,20 +6,8 @@ const SpecialWishes = ({ isIOS }) => {
   const [showHeart, setShowHeart] = useState(false)
 
   const wishes = `
-haiii sayanggg! 🙋🏻‍♀️💕 aku gatau harus mulai cerpen panjang ini darimana sayang hihi ^_^
-
-aku mau ucapin.. selamat ulangtahun 🥳🎂 dan selamat bertumbuh jauh lebih baik 🌱 sayanganku kecintaanku 💖, panjang umur, a wish for u on ur birthday 🎁✨, whatever u ask may u receive 🙏🏻, whatever u seek may u find 🌟, whatever u wish may it be fulfilled on ur birthday 🎉 and together, i hope u will walk on this journey knowing that u belong babe 🤍
-
-i hope even if things sometime do not go ur way 🚧, u will stop trying, u will not give up on urself 💪🏻 and on ur thoughest days, i hope u will reminding your self of this word:
-"u deserve better ✨, kamu layak dicintai 💕 dan dirayakan dalam hal apapun!!"
-
-aku sangat berharap dan berdoa untuk kamu 🙏🏻, mudah mudahan kamu terus diberi kesehatan 🩵, semoga semesta selalu memberimu kemudahan atas segala usahamu 🌌, semoga doamu selalu terkabul satu persatu 🌠, semoga langkah kakimu selalu diringankan 🚶🏻‍♂️, semoga pundakmu dikuatkan 🛡️, semoga segala urusanmu dipermudah 🌿, semoga hatimu dilapangkan 🕊️ atas segala takdir yang di luar rencanamu, dan semoga kamu selalu dikelilingi orang-orang baik di mana pun kamu berada 🌍 sayangkuu.
-
-semangat berproses lelaki baikku 🫶🏻🔥!! step by step yaa, nikmati anak tangganya satu persatu 🪜, kamu ga lagi balapan sama siapapun dalam hidup ini 🏁🚫. so, enjoy ur process 🌷. apapun yang lagi kamu usahakan, semoga selalu dilancarkan 💗✨
-
-nanti setelah kamu selesai berproses dan mencapai semua targetmu 🏆, semoga aku masih menjadi perempuan yang kamu inginkan yaa 🫂🤍
-
-aku akan jadi orang yang paling keras teriak "congrats 🥳🎊 and proud of you 💐" ketika kamu berhasil meraih mimpi ituu 👮🏻‍♂️🚓.
+happy birthday to the most amazing person in my life! Di hari spesialmu ini, aku cuma mau bilang how grateful I am to have you by my side. Kamu bukan hanya my love, tapi juga my best friend dan my everything. semoga this new year of your life brings you lots of happiness, success, and beautiful moments. Aku janji akan selalu support you and love you more every day. You deserve all the best things in the world, and aku ingin jadi bagian dari setiap langkah hidupmu. thankk unfor being you, for all the laughter and love you give me. aku cinta kamu so much, lebih dari kata-kata yang bisa ku ungkapkan.
+enjoy your day, my love. let's make this year unforgettable together🤍💗
   `
 
   return (
@@ -91,7 +79,7 @@ aku akan jadi orang yang paling keras teriak "congrats 🥳🎊 and proud of you
                   ❤️
                 </div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-bold drop-shadow-lg">
-                  Laura 💖
+                  Tasya Filzah Sabrina 💖
                 </div>
                 <div className="text-white text-lg text-center mt-4">
                   Hanya kamu di hatiku, sayang 🥹

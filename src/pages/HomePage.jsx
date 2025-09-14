@@ -21,7 +21,7 @@ const HomePage = ({ isIOS }) => {
         >
           <p className="text-lg text-pink-600 pt-4">Untuk yang tersayang</p>
           <h1 className="text-4xl font-extrabold bg-gradient-to-r from-pink-600 via-pink-400 to-purple-500 text-transparent bg-clip-text drop-shadow-md">
-            Laura
+            Tasya Filzah Sabrina
           </h1>
         </motion.div>
 
@@ -60,14 +60,14 @@ const HomePage = ({ isIOS }) => {
           <h2 className="text-3xl font-bold text-pink-600">
             Selamat Ulang Tahun Sayang!
           </h2>
-          <p className="text-xl text-pink-600">🎉 14 September 2025 🎉</p>
+          <p className="text-xl text-pink-600">🎉 15 september 2025 🎉</p>
 
           <div className="mt-8 p-4 bg-white/80 backdrop-blur-sm rounded-lg max-w-md mx-auto border border-pink-200">
             <p className="text-pink-800 italic">
-              "happy birthday my sweet boy! 💗 today and everyday, only wishing the best for you 🫶🏻"
+              "happy birthday, sayang! (meskipun kamu gamau di panggil sayang lagi hehe), may on this special day all your hopes and dreams come true. aku cuma pengen bilang, walaupun kita sekarang ga lagi barengan, aku tetap berharap yang terbaik untuk kamu. thank u for being part of my life journey, from the stories we shared together to the laughter and lessons I will never forget. kadang aku masih teringat momen-momen sederhana yang pernah kita bagi, asal kamu tau kamu itu sangat berarti dalam hidup aku dulu, dan sampai sekarang kamu itu sangat berarti banget. semoga di tahun ini kamu selalu sehat, bahagia, dan sukses dalam segala hal. if u need a friend to chat with or just entertainment, i'm always here for u whenever. sekali lagi, happy birthday sayang! semoga tahun ini jadi babak baru penuh kebahagiaan dan banyak kisah indah buat kamu, i will always support u, whether you're sad or happy. so, don't feel alone, i'm here. i love u so much sayangku🤍💗"
             </p>
             <p className="mt-4 text-right text-pink-600 font-medium">
-              - Andi
+              - Alvedo Costino
             </p>
           </div>
         </motion.div>

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import VidioCount from "../assets/videos/birthday-wish.mp4";
+import MaafAudio from "../assets/audio/maaf.mp3"; // pastikan file ada di folder ini
 
 const BirthdayCountdown = ({ isIOS }) => {
   const [timeLeft, setTimeLeft] = useState({
@@ -10,8 +11,7 @@ const BirthdayCountdown = ({ isIOS }) => {
     minutes: 0,
     seconds: 0,
   });
-  const [showReplyForm, setShowReplyForm] = useState(false);
-  const [replyMessage, setReplyMessage] = useState("");
+  const [showAudio, setShowAudio] = useState(false);
   const navigate = useNavigate();
 
   const targetDate = new Date("2025-09-14T00:00:00");
@@ -37,22 +37,6 @@ const BirthdayCountdown = ({ isIOS }) => {
     return () => clearInterval(timer);
   }, []);
 
-  const handleReplySubmit = (e) => {
-    e.preventDefault();
-    if (replyMessage.trim()) {
-      const replies = JSON.parse(
-        localStorage.getItem("birthdayReplies") || "[]"
-      );
-      replies.push({
-        message: replyMessage,
-        date: new Date().toLocaleString(),
-      });
-      localStorage.setItem("birthdayReplies", JSON.stringify(replies));
-      setReplyMessage("");
-      setShowReplyForm(false);
-    }
-  };
-
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-pink-50 to-purple-50 p-4">
       <motion.div
@@ -62,7 +46,7 @@ const BirthdayCountdown = ({ isIOS }) => {
         className="text-center max-w-2xl"
       >
         <h1 className="text-4xl md:text-5xl font-bold text-pink-600 mb-8">
-          The Birthday of <span className="text-purple-600">Laura</span>
+          The Birthday of <span className="text-purple-600">Tasya Filzah Sabrina</span>
         </h1>
 
         <div className="mb-8">
@@ -108,7 +92,7 @@ const BirthdayCountdown = ({ isIOS }) => {
 
         <div className="bg-white p-6 rounded-xl shadow-lg mb-8 border border-pink-100">
           <h3 className="text-xl font-semibold text-purple-600 mb-2">
-            📅 18 September 2025
+            📅 15 september 2025
           </h3>
           <p className="text-pink-600">
             Tanggal dimana senyumanmu akan menerangi hariku🥹
@@ -118,54 +102,53 @@ const BirthdayCountdown = ({ isIOS }) => {
         <p className="mt-6 text-lg text-pink-500 italic text-center">
           "today and everyday, i'll always be ur #1 supporter, clap the loudest for u, and praying wholeheartedly for ur well-being."
         </p>
+
+        {/* Tombol untuk munculin audio */}
+        <div className="mt-8">
+          <motion.button
+            onClick={() => setShowAudio(true)}
+            className="px-6 py-3 bg-pink-600 text-white rounded-lg shadow-lg"
+            whileHover={{ scale: isIOS ? 1 : 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            🎧 Putar Pesan Suara
+          </motion.button>
+        </div>
       </motion.div>
 
+      {/* Modal Audio */}
       <AnimatePresence>
-        {showReplyForm && (
+        {showAudio && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
-            style={{ WebkitBackfaceVisibility: "hidden" }}
           >
             <motion.div
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
-              className="bg-white rounded-xl p-6 w-full max-w-md border border-pink-200"
+              className="bg-white rounded-xl p-6 w-full max-w-md border border-pink-200 text-center"
             >
               <h3 className="text-xl font-bold text-pink-600 mb-4">
-                Pesan Untuk Pacarmu
+                Pesan Suara Untukmu 💌
               </h3>
-              <form onSubmit={handleReplySubmit}>
-                <textarea
-                  value={replyMessage}
-                  onChange={(e) => setReplyMessage(e.target.value)}
-                  className="w-full p-3 border border-pink-300 rounded-lg mb-4 focus:ring-2 focus:ring-pink-300 focus:border-transparent"
-                  rows="4"
-                  placeholder="Tulis pesan cintamu disini..."
-                  required
-                />
-                <div className="flex justify-end space-x-3">
-                  <motion.button
-                    type="button"
-                    onClick={() => setShowReplyForm(false)}
-                    className="px-4 py-2 bg-gray-200 rounded-lg"
-                    whileHover={{ scale: isIOS ? 1 : 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    Batal
-                  </motion.button>
-                  <motion.button
-                    type="submit"
-                    className="px-4 py-2 bg-pink-600 text-white rounded-lg"
-                    whileHover={{ scale: isIOS ? 1 : 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    Kirim 💌
-                  </motion.button>
-                </div>
-              </form>
+              <audio
+                controls
+                autoPlay
+                className="w-full mb-4"
+              >
+                <source src={MaafAudio} type="audio/mp3" />
+                Browser kamu tidak mendukung pemutar audio.
+              </audio>
+              <motion.button
+                onClick={() => setShowAudio(false)}
+                className="px-4 py-2 bg-gray-200 rounded-lg"
+                whileHover={{ scale: isIOS ? 1 : 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Tutup
+              </motion.button>
             </motion.div>
           </motion.div>
         )}

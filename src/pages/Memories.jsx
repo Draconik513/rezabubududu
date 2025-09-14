@@ -34,37 +34,46 @@ const Memories = ({ isIOS }) => {
           className="bg-white bg-opacity-90 backdrop-blur-sm p-6 rounded-xl shadow-lg mb-8 border border-pink-100"
         >
           <h2 className="text-2xl font-semibold text-rose-600 mb-4">
-            🚨🚨🚨
+            Permintaan maaf dariku untukmu
           </h2>
 
           <div className="text-left text-pink-800 space-y-4 leading-relaxed">
-            <p>
-              💌 <strong>For my favorite person...</strong>
-            </p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
             >
-              I may not be able to remind you every day 🕊️, but please enjoy
-              your meal at least once a day 🍽️. I know you are busy 🗂️, but
-              please take good care of yourself 🤍.
+              On your special day, aku cuma ingin say sorry dari hati yang
+              terdalam. I know I might have hurt you or made mistakes, and
+              that’s the last thing I ever wanted. Please forgive me.
             </motion.p>
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.2 }}
             >
-              Pat yourself on the back whenever you feel sad 💭💪. Call me if
-              you need me 📞💕.
+              Aku janji akan jadi better for you and for us. Di hari penuh
+              kebahagiaan ini, aku cuma ingin kamu tahu betapa berartinya kamu
+              for me.
             </motion.p>
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.8 }}
             >
-              No matter what happens, just remember 🌸 you're my sweet boy 🥰
-              and I'll always love you through anything and everything 💗✨
+              Happy birthday — semoga all the good things and love selalu
+              menyertaimu. I want to be by your side, fixing things and making
+              you happy every day.
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 2.4 }}
+            >
+              With all my heart.
             </motion.p>
           </div>
         </motion.div>
