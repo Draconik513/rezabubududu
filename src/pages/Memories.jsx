@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import vidioBunga from "../assets/videos/vidioBungadudu.mp4";
-import fotoKenangan from "../assets/images/couple.jpg";
+import vidioBunga from "../assets/videos/vidioBungadudu.jpg";
+import fotoKenangan from "../assets/images/couple.mp4";
 
 const Memories = ({ isIOS }) => {
   const [flowerBloom, setFlowerBloom] = useState(false);
@@ -18,13 +18,20 @@ const Memories = ({ isIOS }) => {
           Kenangan Indah Kita
         </h1>
 
+        {/* Bagian Kenangan, sebelumnya <img> → diganti video */}
         <motion.div whileHover={{ scale: isIOS ? 1 : 1.02 }} className="mb-8">
-          <img
-            src={fotoKenangan}
-            alt="Kita Berdua"
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            webkit-playsinline="true"
+            x-webkit-airplay="allow"
             className="w-full max-w-md mx-auto rounded-xl shadow-2xl border-4 border-white"
             style={{ transform: "translateZ(0)" }}
-          />
+          >
+            <source src={fotoKenangan} type="video/mp4" />
+          </video>
         </motion.div>
 
         <motion.div
@@ -34,46 +41,38 @@ const Memories = ({ isIOS }) => {
           className="bg-white bg-opacity-90 backdrop-blur-sm p-6 rounded-xl shadow-lg mb-8 border border-pink-100"
         >
           <h2 className="text-2xl font-semibold text-rose-600 mb-4">
-            Permintaan maaf dariku untukmu
+            Permintaan Maafku di Hari Ulang Tahunmu
           </h2>
 
           <div className="text-left text-pink-800 space-y-4 leading-relaxed">
+            <p>
+              💌 <strong>Maaf ya, Sayang...</strong>
+            </p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
             >
-              On your special day, aku cuma ingin say sorry dari hati yang
-              terdalam. I know I might have hurt you or made mistakes, and
-              that’s the last thing I ever wanted. Please forgive me.
+              Maaf kalau selama ini aku pernah cuek 😞, terlalu sibuk 😔, atau
+              kurang peka sama perasaanmu 😢. Maaf kalau kadang aku bikin kamu
+              kecewa, salah paham, atau merasa sendiri 😓. Aku gak pernah
+              berniat nyakitin kamu 🥺. Semua itu karena aku manusia biasa yang
+              masih belajar mencintaimu dengan lebih baik 🤍.
             </motion.p>
-
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.2 }}
             >
-              Aku janji akan jadi better for you and for us. Di hari penuh
-              kebahagiaan ini, aku cuma ingin kamu tahu betapa berartinya kamu
-              for me.
+              Terima kasih sudah sabar, sudah tetap di sini 🫶. Aku akan terus
+              belajar jadi lebih baik lagi... untuk kamu 💗
             </motion.p>
-
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.8 }}
             >
-              Happy birthday — semoga all the good things and love selalu
-              menyertaimu. I want to be by your side, fixing things and making
-              you happy every day.
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 2.4 }}
-            >
-              With all my heart.
+              🙏🏻 Maaf ya, dan makasih karena kamu tetap percaya sama aku.
             </motion.p>
           </div>
         </motion.div>
@@ -101,7 +100,7 @@ const Memories = ({ isIOS }) => {
               transformStyle: "preserve-3d",
             }}
           >
-            {/* Romantic Video Bubble */}
+            {/* Bagian Bunga, sebelumnya <video> → diganti img */}
             <motion.div
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
@@ -109,17 +108,11 @@ const Memories = ({ isIOS }) => {
               className="rounded-xl overflow-hidden shadow-xl border-4 border-rose-200"
               style={{ backfaceVisibility: "hidden" }}
             >
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                webkit-playsinline="true"
-                x-webkit-airplay="allow"
+              <img
+                src={vidioBunga}
+                alt="Bunga Dudu"
                 className="w-72 h-72 object-cover"
-              >
-                <source src={vidioBunga} type="video/mp4" />
-              </video>
+              />
             </motion.div>
 
             {/* Realistic Blooming Flower */}

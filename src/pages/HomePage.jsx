@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import ConfettiBackground from "../components/ConfettiBackground";
 import FloatingHearts from "../components/FloatingHearts";
-import heartVideo from "../assets/videos/heart-animation.mp4";
+import heartImage from "../assets/images/heart-animation.jpg"; // ganti file jadi gambar
 
 const HomePage = ({ isIOS }) => {
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const HomePage = ({ isIOS }) => {
         >
           <p className="text-lg text-pink-600 pt-4">Untuk yang tersayang</p>
           <h1 className="text-4xl font-extrabold bg-gradient-to-r from-pink-600 via-pink-400 to-purple-500 text-transparent bg-clip-text drop-shadow-md">
-            Tasya Filzah Sabrina
+            audrey mudita karuna juhanda
           </h1>
         </motion.div>
 
@@ -37,16 +37,11 @@ const HomePage = ({ isIOS }) => {
           className="mb-8"
         >
           <div className="w-64 h-64 mx-auto rounded-full border-4 border-pink-300 shadow-lg overflow-hidden">
-            <video
-              src={heartVideo}
-              autoPlay
-              loop
-              muted
-              playsInline
-              webkit-playsinline="true"
-              x-webkit-airplay="allow"
+            <img
+              src={heartImage}
+              alt="Heart Animation"
               className="w-full h-full object-cover"
-              style={{ transform: 'translateZ(0)' }}
+              style={{ transform: "translateZ(0)" }}
             />
           </div>
         </motion.div>
@@ -60,14 +55,14 @@ const HomePage = ({ isIOS }) => {
           <h2 className="text-3xl font-bold text-pink-600">
             Selamat Ulang Tahun Sayang!
           </h2>
-          <p className="text-xl text-pink-600">🎉 15 september 2025 🎉</p>
+          <p className="text-xl text-pink-600">🎉 20 september 2025 🎉</p>
 
           <div className="mt-8 p-4 bg-white/80 backdrop-blur-sm rounded-lg max-w-md mx-auto border border-pink-200">
             <p className="text-pink-800 italic">
-              "happy birthday, sayang! (meskipun kamu gamau di panggil sayang lagi hehe), may on this special day all your hopes and dreams come true. aku cuma pengen bilang, walaupun kita sekarang ga lagi barengan, aku tetap berharap yang terbaik untuk kamu. thank u for being part of my life journey, from the stories we shared together to the laughter and lessons I will never forget. kadang aku masih teringat momen-momen sederhana yang pernah kita bagi, asal kamu tau kamu itu sangat berarti dalam hidup aku dulu, dan sampai sekarang kamu itu sangat berarti banget. semoga di tahun ini kamu selalu sehat, bahagia, dan sukses dalam segala hal. if u need a friend to chat with or just entertainment, i'm always here for u whenever. sekali lagi, happy birthday sayang! semoga tahun ini jadi babak baru penuh kebahagiaan dan banyak kisah indah buat kamu, i will always support u, whether you're sad or happy. so, don't feel alone, i'm here. i love u so much sayangku🤍💗"
+              "happy birthday sayangg, semoga di umur baru ini kamu makin sehat, makin cantik (meski udah cantik sih dari awal), makin bahagia, dan semua hal baik selalu nyamperin kamu. aku bener bener seneng bisa kenal sama kamu, rasanya tiap hari kaya dapet hadiah gratis dari semesta. semoga ke depan kita makin deket yaa, soalnya aku udah nyaman banget kalo ngobrol sama kamu, malah kadang suka ga sadar senyum senyum sendiri gara gara kamu aku harap di tahun ini kamu nemuin banyak alasan buat ketawa, banyak momen lucu yang bikin hati kamu hangat, dan… kalo boleh jujur, aku juga pengen jadi salah satu alasannya. soalnya serius deh, kamu itu istimewa banget di mata aku"
             </p>
             <p className="mt-4 text-right text-pink-600 font-medium">
-              - Alvedo Costino
+              - reza pahlevi
             </p>
           </div>
         </motion.div>
@@ -82,9 +77,7 @@ const HomePage = ({ isIOS }) => {
             whileHover={{ scale: isIOS ? 1 : 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={() => navigate("/gift")}
-
             className="relative overflow-hidden bg-pink-500 text-white px-8 py-4 rounded-full shadow-lg text-xl font-bold"
-
           >
             <span className="button-text flex items-center">
               <span className="mr-2">🎁</span>

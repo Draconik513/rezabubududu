@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import VidioCount from "../assets/videos/birthday-wish.mp4";
+import BirthdayImage from "../assets/videos/birthday-wish.jpg";
 import MaafAudio from "../assets/audio/maaf.mp3"; // pastikan file ada di folder ini
 
 const BirthdayCountdown = ({ isIOS }) => {
@@ -46,22 +46,17 @@ const BirthdayCountdown = ({ isIOS }) => {
         className="text-center max-w-2xl"
       >
         <h1 className="text-4xl md:text-5xl font-bold text-pink-600 mb-8">
-          The Birthday of <span className="text-purple-600">Tasya Filzah Sabrina</span>
+          The Birthday of{" "}
+          <span className="text-purple-600">audrey mudita karuna juhanda</span>
         </h1>
 
         <div className="mb-8">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            webkit-playsinline="true"
-            x-webkit-airplay="allow"
+          <img
+            src={BirthdayImage}
+            alt="Birthday Countdown"
             className="w-full max-w-md mx-auto rounded-lg shadow-xl"
             style={{ transform: "translateZ(0)" }}
-          >
-            <source src={VidioCount} type="video/mp4" />
-          </video>
+          />
         </div>
 
         <div className="mb-12">
@@ -92,7 +87,7 @@ const BirthdayCountdown = ({ isIOS }) => {
 
         <div className="bg-white p-6 rounded-xl shadow-lg mb-8 border border-pink-100">
           <h3 className="text-xl font-semibold text-purple-600 mb-2">
-            📅 15 september 2025
+            📅 20 september 2025
           </h3>
           <p className="text-pink-600">
             Tanggal dimana senyumanmu akan menerangi hariku🥹
@@ -100,59 +95,15 @@ const BirthdayCountdown = ({ isIOS }) => {
         </div>
 
         <p className="mt-6 text-lg text-pink-500 italic text-center">
-          "today and everyday, i'll always be ur #1 supporter, clap the loudest for u, and praying wholeheartedly for ur well-being."
+          "today and everyday, i'll always be ur #1 supporter, clap the loudest
+          for u, and praying wholeheartedly for ur well-being."
         </p>
 
         {/* Tombol untuk munculin audio */}
-        <div className="mt-8">
-          <motion.button
-            onClick={() => setShowAudio(true)}
-            className="px-6 py-3 bg-pink-600 text-white rounded-lg shadow-lg"
-            whileHover={{ scale: isIOS ? 1 : 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            🎧 Putar Pesan Suara
-          </motion.button>
-        </div>
+        
       </motion.div>
 
-      {/* Modal Audio */}
-      <AnimatePresence>
-        {showAudio && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
-          >
-            <motion.div
-              initial={{ scale: 0.9 }}
-              animate={{ scale: 1 }}
-              className="bg-white rounded-xl p-6 w-full max-w-md border border-pink-200 text-center"
-            >
-              <h3 className="text-xl font-bold text-pink-600 mb-4">
-                Pesan Suara Untukmu 💌
-              </h3>
-              <audio
-                controls
-                autoPlay
-                className="w-full mb-4"
-              >
-                <source src={MaafAudio} type="audio/mp3" />
-                Browser kamu tidak mendukung pemutar audio.
-              </audio>
-              <motion.button
-                onClick={() => setShowAudio(false)}
-                className="px-4 py-2 bg-gray-200 rounded-lg"
-                whileHover={{ scale: isIOS ? 1 : 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Tutup
-              </motion.button>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      
     </div>
   );
 };

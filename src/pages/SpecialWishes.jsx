@@ -1,14 +1,24 @@
-import { motion, AnimatePresence } from 'framer-motion'
-import { useState } from 'react'
-import vidioWishes from '../assets/videos/Wishes.mp4'
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import vidioWishes from "../assets/videos/Wishes.jpg";
+import fotoHeart from "../assets/images/fotoHeart.jpg"; // ✅ tambahkan import foto
 
 const SpecialWishes = ({ isIOS }) => {
-  const [showHeart, setShowHeart] = useState(false)
+  const [showHeart, setShowHeart] = useState(false);
 
   const wishes = `
-happy birthday to the most amazing person in my life! Di hari spesialmu ini, aku cuma mau bilang how grateful I am to have you by my side. Kamu bukan hanya my love, tapi juga my best friend dan my everything. semoga this new year of your life brings you lots of happiness, success, and beautiful moments. Aku janji akan selalu support you and love you more every day. You deserve all the best things in the world, and aku ingin jadi bagian dari setiap langkah hidupmu. thankk unfor being you, for all the laughter and love you give me. aku cinta kamu so much, lebih dari kata-kata yang bisa ku ungkapkan.
-enjoy your day, my love. let's make this year unforgettable together🤍💗
-  `
+Sayangku 💖, hari ini adalah momen yang paling indah karena hari ini kamu lahir ke dunia 🎉. Aku ingin berdoa agar kamu selalu dalam lindungan Tuhan 🙏, diberi kesehatan 💪, kekuatan 🛡️, dan kebahagiaan yang tiada akhir 🌈✨.
+
+Aku tahu hidup tidak selalu mudah 🌧️, tapi aku ingin kamu tahu bahwa kamu tidak sendiri 🤝. Aku akan selalu mendukungmu 💞, menyemangati kamu 💫, dan menjadi pundakmu saat kamu lelah 😔➡️💆‍♀️.
+
+Semoga setiap langkahmu penuh keberkahan 🕌, dan setiap impianmu satu per satu menjadi kenyataan 🌠. Kamu punya hati yang tulus 💓, senyum yang menenangkan 😊, dan jiwa yang cantik luar dalam 🌹. Dunia butuh lebih banyak orang sepertimu 🌍❤️.
+
+Aku ingin kamu tahu bahwa aku percaya padamu sepenuhnya 🙌. Kamu kuat 💥, kamu hebat 🦋, dan kamu pantas mendapatkan yang terbaik 🏆. Jangan pernah ragukan dirimu sendiri 🙅‍♀️, karena kamu adalah cahaya dalam hidup banyak orang 🌟, termasuk hidupku 💘.
+
+Jika suatu hari kamu merasa ragu atau takut 😟, ingatlah doaku ini: Semoga kamu selalu dikelilingi orang-orang baik 👨‍👩‍👧‍👦, rezeki yang cukup 💰, dan cinta yang tulus dari semua arah 💗. Termasuk dariku 🫶.
+
+Aku cinta kamu ❤️, dan akan selalu mencintaimu 💍.
+  `;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-100 to-purple-100 p-4 flex flex-col items-center justify-center">
@@ -21,19 +31,13 @@ enjoy your day, my love. let's make this year unforgettable together🤍💗
         <h1 className="text-4xl font-bold text-center text-pink-600 mb-8">
           Pesan Spesial Untukmu
         </h1>
-        
+
         <div className="mb-8">
-          <video 
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-            webkit-playsinline="true"
-            x-webkit-airplay="allow"
+          <img
+            src={vidioWishes}
+            alt="Birthday Wishes"
             className="w-full max-w-md mx-auto rounded-lg shadow-xl"
-          >
-            <source src={vidioWishes} type="video/mp4" />
-          </video>
+          />
         </div>
 
         <motion.div
@@ -41,7 +45,7 @@ enjoy your day, my love. let's make this year unforgettable together🤍💗
           className="bg-white bg-opacity-80 backdrop-blur-sm p-6 rounded-xl shadow-lg mb-8"
         >
           <div className="prose max-w-none">
-            {wishes.split('\n').map((paragraph, i) => (
+            {wishes.split("\n").map((paragraph, i) => (
               <p key={i} className="text-pink-800 mb-4 text-lg leading-relaxed">
                 {paragraph}
               </p>
@@ -57,7 +61,7 @@ enjoy your day, my love. let's make this year unforgettable together🤍💗
             className="relative overflow-hidden bg-pink-500 text-white px-6 py-3 rounded-full shadow-lg"
           >
             <span className="button-text">
-              {showHeart ? 'Sembunyikan Cintaku' : 'Lihat Cintaku'}
+              {showHeart ? "Sembunyikan Cintaku" : "Lihat Cintaku"}
             </span>
           </motion.button>
         </div>
@@ -68,29 +72,37 @@ enjoy your day, my love. let's make this year unforgettable together🤍💗
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0 }}
-              className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50"
+              className="fixed inset-0 flex flex-col items-center justify-center z-50 bg-black bg-opacity-50 p-4"
             >
               <motion.div
-                className="relative text-pink-500"
+                className="relative text-pink-500 mb-6"
                 animate={{ scale: [1, 1.1, 1], opacity: [0.9, 1, 0.9] }}
                 transition={{ duration: 2, repeat: Infinity }}
               >
-                <div className="text-[12rem] select-none text-center">
-                  ❤️
-                </div>
+                <div className="text-[12rem] select-none text-center">❤️</div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-bold drop-shadow-lg">
-                  Tasya Filzah Sabrina 💖
+                  audrey mudita karuna juhanda 💖
                 </div>
                 <div className="text-white text-lg text-center mt-4">
                   Hanya kamu di hatiku, sayang 🥹
                 </div>
               </motion.div>
+
+              {/* ✅ Tambahkan foto di sini */}
+              <motion.img
+                src={fotoHeart}
+                alt="Kenangan Spesial"
+                className="w-64 h-64 object-cover rounded-xl shadow-lg border-4 border-white"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+              />
             </motion.div>
           )}
         </AnimatePresence>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default SpecialWishes
+export default SpecialWishes;
