@@ -63,7 +63,7 @@ const HomePage = ({ isIOS }) => {
 "
             </p>
             <p className="mt-4 text-right text-pink-600 font-medium">
-              - reza pahlevi
+              - jarcoks
             </p>
           </div>
         </motion.div>
