@@ -7,17 +7,8 @@ const SpecialWishes = ({ isIOS }) => {
   const [showHeart, setShowHeart] = useState(false);
 
   const wishes = `
-Sayangku 💖, hari ini adalah momen yang paling indah karena hari ini kamu lahir ke dunia 🎉. Aku ingin berdoa agar kamu selalu dalam lindungan Tuhan 🙏, diberi kesehatan 💪, kekuatan 🛡️, dan kebahagiaan yang tiada akhir 🌈✨.
+aku harap kamu makin seneng kuliah di umj, makin semangat ngejalanin hari hari disana, dan semoga kamu selalu dikelilingi orang orang baik yang bikin kamu nyaman, aku doa in semua urusan kamu dimudahin, entah itu tugas, dosen, atau hal hal kecil yang kadang bikin pusing, semoga kamu bisa lewatin semuanya dengan hati yang ringan, tapi satu hal yang paling aku harap, jangan pernah kamu ngerasa harus nanggung semua sendiri, kalo ada masalah, jangan dipendem yaa, aku pengen kamu inget kalo kamu punya aku, aku mungkin ga selalu ada di samping kamu secara langsung, tapi aku selalu ada buat dengerin kamu, buat nenangin kamu, bahkan cuma buat bikin kamu inget kalo kamu ga pernah sendirian, aku sayang sama kamu, dan aku bener bener tulus pengen liat kamu bahagia, apapun kondisinya, semoga setiap langkah yang kamu ambil selalu diberkahi, setiap doa kamu pelan pelan dikabulin, dan kamu terus nemuin alasan buat senyum, meski lagi capek sekalipun, aku cuma mau jadi orang yang kamu inget waktu kamu lagi ngerasa berat, biar kamu tau, kamu ga harus kuat sendirian, jadi, apapun yang kamu jalanin nanti, jangan lupa kalo aku selalu ada di sini buat kamu, aku ga janji bisa nyelesain semua masalah kamu, tapi aku janji ga akan pernah ninggalin kamu ngadepin semuanya sendirian, aku sayang kamu, lebih dari yang bisa aku tunjukin dengan kata kata, semoga kamu selalu bahagia, karena selama kamu bahagia, aku juga ikut bahagia 🤍✨
 
-Aku tahu hidup tidak selalu mudah 🌧️, tapi aku ingin kamu tahu bahwa kamu tidak sendiri 🤝. Aku akan selalu mendukungmu 💞, menyemangati kamu 💫, dan menjadi pundakmu saat kamu lelah 😔➡️💆‍♀️.
-
-Semoga setiap langkahmu penuh keberkahan 🕌, dan setiap impianmu satu per satu menjadi kenyataan 🌠. Kamu punya hati yang tulus 💓, senyum yang menenangkan 😊, dan jiwa yang cantik luar dalam 🌹. Dunia butuh lebih banyak orang sepertimu 🌍❤️.
-
-Aku ingin kamu tahu bahwa aku percaya padamu sepenuhnya 🙌. Kamu kuat 💥, kamu hebat 🦋, dan kamu pantas mendapatkan yang terbaik 🏆. Jangan pernah ragukan dirimu sendiri 🙅‍♀️, karena kamu adalah cahaya dalam hidup banyak orang 🌟, termasuk hidupku 💘.
-
-Jika suatu hari kamu merasa ragu atau takut 😟, ingatlah doaku ini: Semoga kamu selalu dikelilingi orang-orang baik 👨‍👩‍👧‍👦, rezeki yang cukup 💰, dan cinta yang tulus dari semua arah 💗. Termasuk dariku 🫶.
-
-Aku cinta kamu ❤️, dan akan selalu mencintaimu 💍.
   `;
 
   return (
