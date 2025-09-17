@@ -41,40 +41,47 @@ const Memories = ({ isIOS }) => {
           className="bg-white bg-opacity-90 backdrop-blur-sm p-6 rounded-xl shadow-lg mb-8 border border-pink-100"
         >
           <h2 className="text-2xl font-semibold text-rose-600 mb-4">
-            Permintaan Maafku di Hari Ulang Tahunmu
-          </h2>
+  Terima Kasih
+</h2>
 
-          <div className="text-left text-pink-800 space-y-4 leading-relaxed">
-            <p>
-              💌 <strong>Maaf ya, Sayang...</strong>
-            </p>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.6 }}
-            >
-              Maaf kalau selama ini aku pernah cuek 😞, terlalu sibuk 😔, atau
-              kurang peka sama perasaanmu 😢. Maaf kalau kadang aku bikin kamu
-              kecewa, salah paham, atau merasa sendiri 😓. Aku gak pernah
-              berniat nyakitin kamu 🥺. Semua itu karena aku manusia biasa yang
-              masih belajar mencintaimu dengan lebih baik 🤍.
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 1.2 }}
-            >
-              Terima kasih sudah sabar, sudah tetap di sini 🫶. Aku akan terus
-              belajar jadi lebih baik lagi... untuk kamu 💗
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 1.8 }}
-            >
-              🙏🏻 Maaf ya, dan makasih karena kamu tetap percaya sama aku.
-            </motion.p>
-          </div>
+<div className="text-left text-pink-800 space-y-4 leading-relaxed">
+  <p>
+    💌 <strong>Terima Kasih, Sayang...</strong>
+  </p>
+
+  <motion.p
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, delay: 0.6 }}
+  >
+    makasih banyakk yaa kamu, serius aku tuh ga nyangka bisa nemu orang kaya kamu, awalnya aku kira kita cuma bakal kenal biasa aja eh malah jadi sering ngobrol sering bercanda sampe sekarang aku ngerasa nyaman banget sama kamu, rasanya tuh kaya tiap hari dapet hadiah random dari semesta yang bikin aku senyum senyum sendiri tanpa sadar,
+  </motion.p>
+
+  <motion.p
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, delay: 1.2 }}
+  >
+    makasih udah selalu bikin suasana jadi ringan makasih udah bikin aku berani cerita hal hal yang biasanya aku simpen sendiri, kamu tuh punya cara aja gitu buat bikin aku ngerasa aman dan dihargain aku jadi mikir kok bisa ya ada orang kaya kamu, dan jujur aja aku tuh sering baper sendiri gara gara kamu,
+  </motion.p>
+
+  <motion.p
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, delay: 1.8 }}
+  >
+    kadang cuma hal kecil aja tapi bisa bikin hati aku hangat banget, makasih karena kamu udah hadir makasih karena kamu bikin aku percaya kalo dunia ini masih ada hal hal manis yang ga bisa dijelasin,
+  </motion.p>
+
+  <motion.p
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, delay: 2.4 }}
+  >
+    aku ga tau gimana caranya ngejelasin perasaan aku sepenuhnya tapi intinya aku seneng banget kenal sama kamu dan aku bener bener be
+  </motion.p>
+</div>
+
         </motion.div>
 
         <motion.button
