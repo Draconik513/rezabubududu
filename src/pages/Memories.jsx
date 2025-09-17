@@ -34,6 +34,7 @@ const Memories = ({ isIOS }) => {
           </video>
         </motion.div>
 
+        {/* Card teks ucapan / terima kasih */}
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -41,68 +42,101 @@ const Memories = ({ isIOS }) => {
           className="bg-white bg-opacity-90 backdrop-blur-sm p-6 rounded-xl shadow-lg mb-8 border border-pink-100"
         >
           <h2 className="text-2xl font-semibold text-rose-600 mb-4">
-  Terima Kasih
-</h2>
+            Terima Kasih
+          </h2>
 
-<div className="text-left text-pink-800 space-y-4 leading-relaxed">
- <h2 className="text-2xl font-semibold text-rose-600 mb-4">
-  Kata-kata Terima Kasih
-</h2>
+          <div className="text-left text-pink-800 space-y-4 leading-relaxed">
+            <p>
+              🤍 <strong>Terima Kasih...</strong>
+            </p>
 
-<div className="text-left text-pink-800 space-y-4 leading-relaxed">
-  <p>
-    🤍 <strong>Terima Kasih...</strong>
-  </p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.6 }}
+            >
+              makasih banyakk yaa kamu, serius aku tuh ga nyangka bisa nemu orang
+              kaya kamu, awalnya aku kira kita cuma bakal kenal biasa aja eh
+              malah jadi sering ngobrol sering bercanda sampe sekarang aku
+              ngerasa nyaman banget sama kamu, rasanya tuh kaya tiap hari
+              dapet hadiah random dari semesta yang bikin aku senyum senyum
+              sendiri tanpa sadar, makasih udah selalu bikin suasana jadi ringan
+              makasih udah bikin aku berani cerita hal hal yang biasanya aku
+              simpen sendiri, kamu tuh punya cara aja gitu buat bikin aku ngerasa
+              aman dan dihargain aku jadi mikir kok bisa ya ada orang kaya kamu,
+              dan jujur aja aku tuh sering baper sendiri gara gara kamu, kadang
+              cuma hal kecil aja tapi bisa bikin hati aku hangat banget, makasih
+              karena kamu udah hadir makasih karena kamu bikin aku percaya kalo
+              dunia ini masih ada hal hal manis yang ga bisa dijelasin.
+            </motion.p>
 
-  <motion.p
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1, delay: 0.6 }}
-  >
-    makasih banyakk yaa kamu, serius aku tuh ga nyangka bisa nemu orang kaya kamu, awalnya aku kira kita cuma bakal kenal biasa aja eh malah jadi sering ngobrol sering bercanda sampe sekarang aku ngerasa nyaman banget sama kamu, rasanya tuh kaya tiap hari dapet hadiah random dari semesta yang bikin aku senyum senyum sendiri tanpa sadar, makasih udah selalu bikin suasana jadi ringan makasih udah bikin aku berani cerita hal hal yang biasanya aku simpen sendiri, kamu tuh punya cara aja gitu buat bikin aku ngerasa aman dan dihargain aku jadi mikir kok bisa ya ada orang kaya kamu, dan jujur aja aku tuh sering baper sendiri gara gara kamu, kadang cuma hal kecil aja tapi bisa bikin hati aku hangat banget, makasih karena kamu udah hadir makasih karena kamu bikin aku percaya kalo dunia ini masih ada hal hal manis yang ga bisa dijelasin.
-  </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1.2 }}
+            >
+              aku ga tau gimana caranya ngejelasin perasaan aku sepenuhnya tapi
+              intinya aku seneng banget kenal sama kamu dan aku bener bener
+              bersyukur ada kamu di hidup aku, jangan bosen yaa sama aku soalnya
+              aku udah banget betah deket sama kamu 🤍 aku pengen bilang juga tiap
+              kali aku inget kamu aku selalu kebayang hal hal receh yang pengen
+              aku lakuin bareng kamu nanti, kayak kita cari makanan random terus
+              kita call sampe subuh ketawa ketawa sampe sakit perut, hal hal
+              kecil itu yang buat aku ngerasa hangat.
+            </motion.p>
 
-  <motion.p
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1, delay: 1.2 }}
-  >
-    aku ga tau gimana caranya ngejelasin perasaan aku sepenuhnya tapi intinya aku seneng banget kenal sama kamu dan aku bener bener bersyukur ada kamu di hidup aku, jangan bosen yaa sama aku soalnya aku udah banget betah deket sama kamu 🤍 aku pengen bilang juga tiap kali aku inget kamu aku selalu kebayang hal hal receh yang pengen aku lakuin bareng kamu nanti, kayak kita cari makanan random terus kita call sampe subuh ketawa ketawa sampe sakit perut, hal hal kecil itu yang buat aku ngerasa hangat.
-  </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1.8 }}
+            >
+              aku pengen jadi orang yang bisa nemenin kamu di momen sekecil itu
+              sampai yang gede juga pelan pelan aja tanpa tekanan, aku janji
+              bakal tetep jadi orang yang dengerin kamu tanpa ngejudge yang
+              inget detil detil kecil yang kadang kamu sendiri lupa dan yang
+              selalu nyari cara buat bikin kamu senyum, aku mungkin bakal kikuk
+              kadang bakal salah kata juga mungkin tapi aku bakal minta maaf dan
+              belajar biar gak ngulangin.
+            </motion.p>
 
-  <motion.p
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1, delay: 1.8 }}
-  >
-    aku pengen jadi orang yang bisa nemenin kamu di momen sekecil itu sampai yang gede juga pelan pelan aja tanpa tekanan, aku janji bakal tetep jadi orang yang dengerin kamu tanpa ngejudge yang inget detil detil kecil yang kadang kamu sendiri lupa dan yang selalu nyari cara buat bikin kamu senyum, aku mungkin bakal kikuk kadang bakal salah kata juga mungkin tapi aku bakal minta maaf dan belajar biar gak ngulangin.
-  </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 2.4 }}
+            >
+              aku pengen kita tumbuh bareng saling ngertiin saling jaga satu sama
+              lain, kalo kamu lagi bad mood atau lagi bt sama dunia kamu boleh
+              banget ngeluh ke aku aku siap jadi tempat kamu curhat receh atau
+              curhat berat sekalipun, kadang aku cuma pengen banget jadi alasan
+              kecil kenapa kamu ngerasa lebih baik di hari itu cukup karena aku
+              ada.
+            </motion.p>
 
-  <motion.p
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1, delay: 2.4 }}
-  >
-    aku pengen kita tumbuh bareng saling ngertiin saling jaga satu sama lain, kalo kamu lagi bad mood atau lagi bt sama dunia kamu boleh banget ngeluh ke aku aku siap jadi tempat kamu curhat receh atau curhat berat sekalipun, kadang aku cuma pengen banget jadi alasan kecil kenapa kamu ngerasa lebih baik di hari itu cukup karena aku ada.
-  </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 3 }}
+            >
+              aku bener bener serius sama perasaan aku ini tapi aku juga santai
+              pengen jalanin semuanya natural tanpa dipaksa, makasih juga karena
+              kamu udah sabar sama aku yang kadang lebay atau kepo makasih karena
+              kamu masih mau dengerin ocehan aku yang panjang ini aku ngerasa
+              beruntung bisa deket sama kamu dan aku harap kamu ngerasain hal yang
+              sama jangan bosen ya soalnya aku udah betah banget dan pengen terus
+              deket sama kamu pelan pelan tapi pasti 🤍
+            </motion.p>
 
-  <motion.p
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1, delay: 3 }}
-  >
-    aku bener bener serius sama perasaan aku ini tapi aku juga santai pengen jalanin semuanya natural tanpa dipaksa, makasih juga karena kamu udah sabar sama aku yang kadang lebay atau kepo makasih karena kamu masih mau dengerin ocehan aku yang panjang ini aku ngerasa beruntung bisa deket sama kamu dan aku harap kamu ngerasain hal yang sama jangan bosen ya soalnya aku udah betah banget dan pengen terus deket sama kamu pelan pelan tapi pasti 🤍
-  </motion.p>
-
-  <motion.p
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1, delay: 3.6 }}
-  >
-    kalo kamu juga ngerasa nyaman ayo kita lanjutin obrolan ini jalan bareng dan bikin banyak momen kecil yang nanti bisa kita inget bareng, aku tunggu kamu kapan pun kamu mau karena aku bener bener pengen kenal kamu lebih jauh lagi.
-  </motion.p>
-</div>
-
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 3.6 }}
+            >
+              kalo kamu juga ngerasa nyaman ayo kita lanjutin obrolan ini jalan
+              bareng dan bikin banyak momen kecil yang nanti bisa kita inget
+              bareng, aku tunggu kamu kapan pun kamu mau karena aku bener bener
+              pengen kenal kamu lebih jauh lagi.
+            </motion.p>
+          </div>
         </motion.div>
 
         <motion.button
