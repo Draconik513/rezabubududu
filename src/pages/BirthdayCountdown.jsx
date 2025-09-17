@@ -14,7 +14,7 @@ const BirthdayCountdown = ({ isIOS }) => {
   const [showAudio, setShowAudio] = useState(false);
   const navigate = useNavigate();
 
-  const targetDate = new Date("2025-09-14T00:00:00");
+  const targetDate = new Date("2025-09-20T00:00:00");
 
   useEffect(() => {
     const timer = setInterval(() => {
